@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout Example</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        nav, section {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .small-box {
+            width: calc(33.33% - 20px); /* 20px margin between each box */
+            height: 100px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            Navigation Box
+        </nav>
+        <section>
+            Section Box
+            <div class="small-box">Small Box 1</div>
+            <div class="small-box">Small Box 2</div>
+            <div class="small-box">Small Box 3</div>
+        </section>
+    </div>
+</body>
+</html>

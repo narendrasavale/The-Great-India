@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1><font color="red">Student Registration Form</font></h1>
+        <table width="40%">
+            <tr>
+                <td><label for="firstName">First Name</label></td>
+                <td><input type="text" placeholder="Enter First Name" size="30" minlength="8" maxlength="16" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name</label></td>
+                <td><input type="text" placeholder="Enter Last Name" size="30" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio">male
+                    <input type="radio">female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Age">Age</label></td>
+                <td><input type="number" placeholder="Enter your Age" size="30px" required style="width: 240px;"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" size="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email Address</label></td>
+                <td><input type="email" placeholder="Enter your Email" size="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td> 
+                <td><input type="password" placeholder="Enter your password min 8 characters " size="30" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Confirm Password</label></td>
+                <td><input type="password" placeholder="Confirm password" required size="30"></td> 
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">phone Number</label></td>
+                <td>
+                    <select name="number" id="number">
+                        <option value="+91" selected>+91</option>
+                        <option value="+62">+62</option>
+                        <option value="+911">+911</option>
+                        <option value="+11">+11</option>
+                        <option value="+121">+121</option>
+                    </select>
+                    <input type="number" placeholder="Enter your phone number" required size="30">
+                </td>
+             </tr>
+             <tr>
+                <td><label for="address">Address</label></td>
+                <td>
+                    <textarea placeholder="Enter your address" name="address" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td>
+                    <select name="state" id="">
+                        <option value="" disabled selected>--Select your option--</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="maharashtra">Gujrat</option>
+                        <option value="maharashtra">Punjab</option>
+                        <option value="maharashtra">Haryana</option>
+                        <option value="maharashtra">Uttar Pradesh</option>
+                        <option value="maharashtra">Rajasthan</option>
+                        <option value="maharashtra">TamilNadu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pincode">PinCode</label></td>
+                <td><input type="text" placeholder="Enter your pin code" size="30"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hobbies">Hobbies</label>
+                </td>
+                <td>
+                    <input type="checkbox">Music
+                    <input type="checkbox">Movies
+                    <input type="checkbox">Sports
+                    <input type="checkbox">Travel
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" value="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

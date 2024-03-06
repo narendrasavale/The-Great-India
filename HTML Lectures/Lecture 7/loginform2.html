@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <form action="">
+        <h1>Job Application Form</h1>
+        <table>
+            <tr>
+                <td><label for="fullName">Full Name:</label></td>
+                <td><input type="text" id="fullName" placeholder="Enter Full Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" placeholder="Enter Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td>
+                    <select id="countryCode">
+                        <option value="+1" selected>+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+91">+91</option>
+                    </select>
+                    <input type="tel" id="phone" placeholder="Enter Phone Number" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="position">Position Applied For:</label></td>
+                <td><input type="text" id="position" placeholder="Enter Position" required></td>
+            </tr>
+            <tr>
+                <td><label for="resume">Upload Resume:</label></td>
+                <td><input type="file" id="resume" accept=".pdf,.doc,.docx" required></td>
+            </tr>
+            <tr>
+                <td><label for="coverLetter">Cover Letter:</label></td>
+                <td><textarea id="coverLetter" placeholder="Write your cover letter here" rows="6" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="availability">Availability:</label></td>
+                <td><input type="text" id="availability" placeholder="Enter Availability" required></td>
+            </tr>
+            <tr>
+                <td><label for="referral">How did you hear about us?</label></td>
+                <td>
+                    <select id="referral" required>
+                        <option value="" disabled selected>-- Select One --</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Website">Website</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

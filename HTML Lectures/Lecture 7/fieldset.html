@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend align="center">
+            Narendra
+        </legend>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, architecto a porro eveniet voluptas cupiditate quam officia rem cumque, quae iure. Aut nisi, iure eum explicabo eius laboriosam placeat accusamus!
+        </p>
+    </fieldset>
+
+    <details>
+        <summary>HTML</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, assumenda nostrum, adipisci repudiandae amet in explicabo quisquam ullam quaerat non voluptatem? Deserunt officiis quo, molestias ullam voluptatum culpa ab?</p>
+    </details>
+
+    <form action="">
+        <label for="">Range</label><br>
+        <input type="range" name="" min="0" max="100" value="30">
+    </form>
+
+    <progress value="0" max="100" min="0" id="A"></progress>
+ 
+    <meter value="80" min="0" max="100"></meter>
+
+    <button onclick="inc()">counter</button>
+
+    <script type="text/javascript">
+        var counter=0;
+        function inc(){
+            counter++;
+            document.getElementById('A').value=counter;
+        }
+    </script>
+</body>
+</html>
